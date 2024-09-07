@@ -1,0 +1,24 @@
+{
+  "name": "hacker-rank-env-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.ts",
+  "scripts": {
+    "start": "tsx --env-file=.env main.ts < input.txt",
+    "start:watch": "tsx watch --env-file=.env main.ts < input.txt",
+    "test": "tsx --env-file=.env --test",
+    "test:watch": "tsx watch --env-file=.env --test --include \"tests/**/*\" main.test.ts"
+  },
+  "keywords": [
+    "hacker-rank",
+    "test",
+    "environment"
+  ],
+  "author": "Jan Karlo Dela Cruz",
+  "license": "MIT",
+  "description": "A TypeScript-specific environment to test and debug HackerRank tests",
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "tsx": "^4.19.0"
+  }
+}

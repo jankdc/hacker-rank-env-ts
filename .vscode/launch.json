@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug HackerRank code",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsx",
+      "program": "${workspaceFolder}/main.ts",
+      "envFile": "${workspaceFolder}/.env",
+      "args": ["<", "${workspaceFolder}/input.txt"]
+    }
+  ]
+}
