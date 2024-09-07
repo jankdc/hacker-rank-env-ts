@@ -24,7 +24,7 @@ npm install
 
 ### Testing
 
-Since HackerRank works on standard input and output, we'll have to add our test case's inputs and expected output into files to be read by the test runner later. There's a nifty script wizard to simplify this:
+Since HackerRank works on standard input and output, we'll have to add our test case's inputs and expected output into files to be read by the test runner later. There's a nifty script wizard to capture the current input and output you've been using to save as a test case:
 
 ```
 # Creates files for input and expected output
