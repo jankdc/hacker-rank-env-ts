@@ -12,12 +12,11 @@ const tests = readdirSync(`${__dirname}/tests`);
 
 for (const testCase of tests) {
   const directoryPath = `${__dirname}/tests/${testCase}`;
-  const description = readFileSync(`${directoryPath}/description.txt`, "utf8");
   const input = readFileSync(`${directoryPath}/input.txt`);
   const output = readFileSync(`${directoryPath}/output.txt`, "utf8");
 
-  test(description, () => {
-    const result = spawnSync("npm", ["start", "-s"], {
+  test(testCase, () => {
+    const result = spawnSync("npx", ["tsx", "--env-file=.env", "main.ts"], {
       input: input,
       encoding: "utf8",
     });

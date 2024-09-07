@@ -27,11 +27,8 @@ npm install
 Since HackerRank works on standard input and output, we'll have to add our test case's inputs and expected output into files to be read by the test runner later. There's a nifty script wizard to simplify this:
 
 ```
-# Prompts for description, input and expected output
+# Creates files for input and expected output
 ./scripts/create-test-case.sh
-
-# Or add an empty test case to be filled later
-./scripts/create-test-case.sh --empty
 
 # Runs all the test cases
 npm test
