@@ -17,7 +17,7 @@ npm install
 
 1. Copy + paste the initial HackerRank code into `main.ts`
 2. Add the example input as-is into `input.txt`
-3. Run `npm start` or `npm start:watch` for watch mode
+3. Run `npm start`
 4. It will print the output of the program to the terminal
 
 > If you're using VS Code, there's a debugger option. Run the `Debug HackerRank Code` launcher in the debugger panel to start it.

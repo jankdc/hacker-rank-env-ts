@@ -5,9 +5,8 @@
   "main": "main.ts",
   "scripts": {
     "start": "tsx --env-file=.env main.ts < input.txt",
-    "start:watch": "tsx watch --env-file=.env main.ts < input.txt",
     "test": "tsx --env-file=.env --test",
-    "test:watch": "tsx watch --env-file=.env --test --include \"tests/**/*\" main.test.ts"
+    "test:watch": "tsx watch --env-file=.env --test --include \"tests/**/*\" --include \"main.ts\" main.test.ts"
   },
   "keywords": [
     "hacker-rank",
