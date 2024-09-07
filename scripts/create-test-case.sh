@@ -42,6 +42,6 @@ fi
 mkdir -p "$next_test_case"
 
 # Create empty description.txt, input.txt, and output.txt
-touch "$next_test_case/input.txt"
-touch "$next_test_case/output.txt"
-echo "Created $next_test_case with empty input.txt, and output.txt"
+cp input.txt "$next_test_case/input.txt"
+echo "$(npm start -s)" > "$next_test_case/output.txt"
+echo "Created $next_test_case with current input and output"
